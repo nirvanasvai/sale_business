@@ -1,0 +1,33 @@
+.pagination {
+	flex-wrap: wrap;
+	.page-item {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.page-link {
+		font-size: 18px;
+		font-weight: 400;
+		color: $black;
+		width: 43px;
+		height: 43px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border: none;
+		&:hover {
+			background-color: #1D2B3B;
+			color: $white;
+			svg {
+				fill: $white;
+			}
+		}
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: $black;
+			vertical-align: middle;
+			transition: all .2s;
+		}
+	}
+}

@@ -1,0 +1,115 @@
+.login {
+	.page-title {
+		margin-bottom: 48px;
+	}
+	.page-subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		color: #464646;
+	}
+	&-form {
+		.btn {
+			padding-top: 13px;
+			padding-bottom: 13px;
+		}
+		input {
+			padding: 14px 20px;
+			font-size: 14px;
+			font-weight: 400;
+			color: $grey;
+			margin-bottom: 30px;
+			&:focus {
+				background: #fff url('/images/icons/pensil.svg') no-repeat right .75rem center;
+			}
+		}
+		.pass {
+
+		}
+		.remember-me {
+			color: #E12B2B;
+			font-size: 14px;
+			font-weight: 500;
+			margin-left: 30px;
+		}
+		&__notify {
+			font-size: 14px;
+			font-weight: 500;
+			.success {
+				color: #0AA548;
+			}
+		}
+		.form-check-label {
+			a {
+				color: #E12B2B;
+				text-decoration: underline;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+
+	}
+	&-actions {
+		margin-bottom: 20px;
+	}
+	.button-grey {
+		padding: 17px 62px;
+		margin-right: 30px;
+		background-color: #8F9EBE;
+		color: $white;
+		border-radius: 5px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.login {
+		padding: 60px 0px;
+		.page-title {
+			margin-bottom: 30px;
+		}
+		.page-subtitle {
+			font-size: 14px;
+			font-weight: 400;
+			color: #464646;
+			margin-bottom: 30px;
+		}
+		&-form {
+			.continue {
+				order: 1;
+			}
+			.reg {
+				order: 2;
+			}
+			input {
+				padding-left: 13px;
+			}
+			.or {
+				padding: 20px 0px;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.btn {
+				width: 100%;
+			}
+			.button-grey {
+				margin-right: 0;
+			}
+			.remember-me {
+				margin: 0;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 30px;
+			}
+			&__notify {
+				margin-top: 20px;
+				display: block;
+				text-align: center;
+				.success {
+					color: #0AA548;
+				}
+			}
+		}
+		&-actions {
+			margin-bottom: 0;
+		}
+	}
+}

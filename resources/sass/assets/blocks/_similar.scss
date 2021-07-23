@@ -1,0 +1,53 @@
+.similar {
+	margin-top: 60px;
+	h2 {
+		font-size: 18px;
+		font-weight: 500;
+		color: $black;
+		margin-bottom: 30px;
+	}
+	.object-img {
+		margin-bottom: 13px;
+	}
+	.object-profit {
+		color: #A7ABAF;
+		font-weight: 400;
+		margin-bottom: 37px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.similar {
+		overflow: hidden;
+		&-list {
+			flex-wrap: nowrap!important;
+			overflow-x: scroll;
+			&::-webkit-scrollbar, &::-webkit-scrollbar {
+			  width: 3px;
+			  background-color: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb, &::-webkit-scrollbar-thumb {
+			  width: 3px;
+			  background-color: $main;
+			  border-radius: 20px;
+			}
+		}
+		.object-footer {
+			display: none!important;
+		}
+		.object-profit {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0;
+			span {
+				color: #A7ABAF;
+			}
+		}
+		.object-name {
+			margin-bottom: 15px;
+		}
+		.object-price {
+			margin-bottom: 15px;
+		}
+	}
+}

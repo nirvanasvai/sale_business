@@ -1,0 +1,14 @@
+.verification {
+	&-item {
+		font-size: 14px;
+		font-weight: 400;
+		color: #464646;
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+		img {
+			margin-right: 9px;
+		}
+	}
+}

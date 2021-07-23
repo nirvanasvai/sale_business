@@ -1,0 +1,41 @@
+.statistic {
+	h2 {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: 500;
+		color: $black;
+	}
+	&-box {
+		border-radius: 5px;
+		background-color: $white;
+		padding: 20px;
+		.table {
+			margin-bottom: 0;
+			font-size: 14px;
+			font-weight: 400;
+			color: #464646;
+			tr {
+				border: none;
+				padding: 0;
+				&:last-child {
+					td {
+						padding-bottom: 0;
+					}	
+				}
+			}
+			td {
+				border: none;
+				padding: 0;
+				padding-bottom: 15px;
+			}
+			th {
+				border: none;
+				padding: 0;
+				padding-bottom: 30px;
+				color: $grey;
+				font-weight: 400;
+			}
+		}
+	}
+
+}

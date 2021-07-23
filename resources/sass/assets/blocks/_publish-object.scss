@@ -1,0 +1,224 @@
+.publish-object {
+	background-color: $white;
+	border-radius: 5px;
+	padding: 20px;
+	.category {
+		font-size: 14px;
+		font-weight: 400;
+		color: $grey;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.id {
+		display: inline-flex;
+		padding: 8px 10px;
+		font-size: 11px;
+		font-weight: 400;
+		color: #464646;
+		background-color: #E5E5E5;
+		margin-bottom: 15px;
+		border-radius: 5px;
+	}
+	.status {
+		margin-left: 25px;
+	}
+	.on-check {
+		font-size: 14px;
+		font-weight: 400;
+		color: #E25E14;
+	}
+	.thumb {
+		height: 141px;
+		margin-bottom: 15px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.name {
+		font-size: 18px;
+		font-weight: 500;
+		color: $black;
+		margin-bottom: 15px;
+		a {
+			color: $black;
+		}
+	}
+	.view {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.description {
+		font-size: 14px;
+		font-weight: 400;
+		color: $black;
+		line-height: 1.4;
+		margin-bottom: 15px;
+	}
+	.contact {
+		font-size: 14px;
+		font-weight: 400;
+		color: $grey;
+		a {
+			margin-top: 7px;
+			display: inline-flex;
+			color: $grey;
+		}
+		margin-bottom: 15px;
+	}
+	.info {
+		font-size: 14px;
+		font-weight: 400;
+		color: $black;
+		padding: 15px 0px;
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		margin-bottom: 15px;
+		.deleted {
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+	.actions {
+		a {
+			font-size: 14px;
+			font-weight: 400;
+			color: $grey;
+			display: block;
+			margin-bottom: 19px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:hover {
+				color: $main;
+				text-decoration: underline;
+			}
+			img {
+				margin-right: 10px;
+			}
+		}
+		.edit {
+			color: $main;
+			text-decoration: underline;
+		}
+		.recover {
+			color: $main;
+			text-decoration: underline;
+		}
+		.delete {
+			color: #E12B2B;
+			text-decoration: underline;
+		}
+	}
+}
+.moderation {
+	.id {
+		margin-bottom: 0!important;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.cabinet {
+		&-publish {
+			.publish-object {
+				display: flex;
+				flex-direction: column;
+				padding: 16px 14px;
+				.info {
+					order: 5;
+					border-bottom: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				.actions {
+					border-top: 1px solid #E5E5E5;
+					order: 3;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+				.statistic {
+					order: 2;
+					border-top: 1px solid #E5E5E5;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					&-box {
+						padding: 0;
+						.table {
+							thead {
+								tr {
+									th {
+										padding-right: 10px;
+										&:first-child {
+											padding-right: 15px;
+										}
+										&:last-child {
+											padding-right: 0;
+										}
+									}
+								}
+								
+							}
+							tbody {
+								tr {
+									td {
+										padding-right: 10px;
+										&:first-child {
+											padding-right: 15px;
+										}
+										&:last-child {
+											padding-right: 0;
+										}
+									}
+								}
+								
+							}
+						}
+					}
+				}
+			}
+			.publish-header {
+				display: flex;
+				order: 1;
+				padding-bottom: 15px;
+				.status {
+					margin-left: 0;
+					margin-top: 10px;
+				}
+				.text {
+					order: 2;
+					width: 50%;
+					margin-left: 15px;
+				}
+				.block {
+					order: 1;
+					width: 50%;
+					padding: 0!important;
+					.id {
+						padding: 8px 10px;
+					}
+				}
+				.name {
+					font-size: 14px;
+					margin-bottom: 7px;
+					a {
+						color: $main;
+					}
+				}
+				.price {
+					font-size: 18px;
+					font-weight: 500;
+					color: $black;
+					margin-bottom: 7px;
+				}
+				.publishing {
+					font-size: 12px;
+					font-weight: 400;
+					color: $grey;
+				}
+				.thumb {
+					height: unset;
+				}
+			}
+		}
+	}
+}

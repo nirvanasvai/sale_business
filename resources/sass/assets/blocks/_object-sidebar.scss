@@ -1,0 +1,52 @@
+.object {
+	&-sidebar {
+		&__item {
+			background-color: $white;
+			padding: 20px;
+			cursor: pointer;
+			border-radius: 5px;
+			margin-bottom: 30px;
+			transition: all .2s;
+			.link {
+				font-size: 14px;
+				font-weight: 400;
+				color: $black;
+				display: flex;
+				margin-bottom: 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+				img {
+					margin-right: 16px;
+				}
+			}
+			h3 {
+				font-size: 18px;
+				font-weight: 500;
+				color: $black;
+				margin-bottom: 24px;
+			}
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				color: $black;
+				margin-bottom: 32px;
+			}
+            .button {
+                width: 100%;
+                padding: 15px 30px;
+                font-size: 14px;
+            }
+		}
+		.dark {
+			background-color: #1D2B3B;
+			h3, p {
+				color: $white;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+.promotion {
+	padding: 21px 20px;
+	background-color: $white;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	&-head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 9px;
+		h6 {
+			font-size: 17px;
+			font-weight: 500;
+			color: $black;
+		}
+		span {
+			padding: 4px;
+			background-color: #EBF0F4;
+			border-radius: 2px;
+			color: #A7ABAF;
+			font-size: 10px;
+		}
+	}
+	p {
+		font-size: 14px;
+		font-weight: 300;
+		color: $black;
+		line-height: 1;
+		width: 140px;
+		margin-bottom: 30px;
+	}
+	&-link {
+		display: inline-flex;
+		align-items: center;
+		font-size: 14px;
+		color: $black;
+		font-weight: 400;
+		img {
+			margin-right: 8px;
+		}
+	}
+	&-img {
+		position: absolute;
+		bottom: -55px;
+		right: -65px;
+	}
+}
